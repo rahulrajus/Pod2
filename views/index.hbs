@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)https://v4-alpha.getbootstrap.com/examples/dashboard/ -->
+<html lang="en" class="gr__v4-alpha_getbootstrap_com">
+
+<head>
+    <link rel="shortcut icon" href="Logo.png" />
+
+    <title>{{title}}</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./Dashboard Template for Bootstrap_files/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="./Dashboard Template for Bootstrap_files/dashboard.css" rel="stylesheet">
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
+        <button class="navbar-toggler navbar-toggler-right hidden-lg-up" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <nav class="navbar navbar-light" id="navBrand">
+            <form class="navbar-brand" id="navbar-brand" action="/home">
+                <img src="Logo.png" width="40" onclick="document.navbar-brand.submit();"height="40" class="d-inline-block align-top" alt="Logo">
+                <span id="navbar-text">PodStock</span>
+            </form>
+        </nav>
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+
+            </ul>
+            <img src="http://www.freeiconspng.com/uploads/profile-icon-9.png" href="profile.html" width="40" height="40" alt="">
+            <form class="form-inline mt-2 mt-md-0" action="/login">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Login</button>
+            </form>
+            <form class="form-inline mt-2 mt-md-0" action="/signup">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Sign Up</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-sm-3 col-md-2 hidden-xs-down bg-faded sidebar">
+                <ul class="nav nav-pills flex-column">
+                    <li class="nav-item">
+                        <form action = "/overview" id="over">
+
+                        <a class="nav-link active" onclick="document.over.submit();">Overview <span class="sr-only">(current)</span></a>
+                      </form>
+                    </li>
+                    <li class="nav-item">
+                        <form action="/mypods" id="pod">
+                            <a class="nav-link" onclick="document.pod.submit();">My Pods</a>
+                        </form>
+                    </li>
+                    <li class="nav-item">
+                        <form action="/myinvestments" id="invest">
+                        <a class="nav-link" onclick="document.invest.submit();">My Investments</a>
+                      </form>
+                    </li>
+                    <li class="nav-item">
+                      <form action="/market" id="mark">
+                        <a class="nav-link"  onclick="document.mark.submit();">Market</a>
+                      </form>
+                    </li>
+                    <li class="nav-item">
+                      <form action="recs" id="rec">
+                        <a class="nav-link"  onclick="document.rec.submit();">Recommendations</a>
+                      </form>
+                    </li>
+                </ul>
+            </nav>
+
+            <main class="col-sm-9 offset-sm-3 col-md-10 offset-md-2 pt-3">
+                <h1>Overview</h1>
+
+                <section class="row text-center placeholders">
+
+                    <div class="col-6 col-sm-3 placeholder">
+                        <form action="/mypods">
+                            <input type="image" src="http://icons.iconarchive.com/icons/blackvariant/button-ui-system-folders-alt/512/Group-icon.png" type="submit" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail" name="mypod" id="mypod">
+                        </form>
+                        <h4>Groups</h4>
+                        <div class="text-muted">Manage your groups and add members</div>
+
+                    </div>
+
+                    <div class="col-6 col-sm-3 placeholder">
+                        <form action="/myinvestments">
+                        <!-- <img src="http://www.icons101.com/icon_png/size_256/id_67365/StockIncrease.png" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail"> -->
+                        <input type="image" src="http://www.icons101.com/icon_png/size_256/id_67365/StockIncrease.png" type="submit" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail" name="myinvestments" id="myinvestments">
+
+                      </form>
+                        <h4>Investments</h4>
+                        <span class="text-muted">Look at all your investments in one place</span>
+                    </div>
+                    <div class="col-6 col-sm-3 placeholder">
+                      <form action="/market">
+                        <!-- <img src="https://image.flaticon.com/icons/svg/138/138339.svg" action="/mymarket" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail"> -->
+                        <input type="image" src="https://image.flaticon.com/icons/svg/138/138339.svg" type="submit" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail" name="market" id="market">
+
+                      </form>
+                        <h4>Market</h4>
+                        <span class="text-muted">Learn about the market surrounding your stocks</span>
+                    </div>
+                    <div class="col-6 col-sm-3 placeholder">
+                      <form action="/recs">
+                        <!-- <img src="http://www.icons101.com/icon_ico/id_82026/Notes.ico" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail"> -->
+                        <input type="image" src="http://www.icons101.com/icon_ico/id_82026/Notes.ico" type="submit" width="200" height="200" class="img-fluid rounded-circle" alt="Generic placeholder thumbnail" name="recs" id="recs">
+
+                      </form>
+                        <h4>Recommendations</h4>
+                        <span class="text-muted">Get Recommendations about your Stock Portfolio</span>
+                    </div>
+                </section>
+</body>
+
+</html>
