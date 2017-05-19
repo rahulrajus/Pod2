@@ -1,8 +1,19 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
-
 a {
   color: #00B7FF;
+}
+
+#navbar-text {
+    font-size: 30px;
+}
+
+#navBrand {
+    padding: 0px;
+}
+
+.stockGraph {
+    margin: 20px;
+}
+
+#create-but {
+    margin-left: 5px;
 }

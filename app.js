@@ -12,8 +12,8 @@ var app = express();
 var db = require('./db')
 var MongoClient = require('mongodb').MongoClient
  , assert = require('assert');
-var url = "mongodb://podstock:Podstock123@ds139959.mlab.com:39959/podstock"
-db.connect(url)
+var url = "mongodb://podstock:Podstock123@ds139959.mlab.com:39959/podstock";
+db.connect(url);
 
 // app.use(function(req,res,next){
 //     //console.log("test",db.users.findOne({email:"rahulrajan@gmail.com"}))
@@ -41,7 +41,8 @@ app.use(function(req, res, next) {
   var err = new Error('Not Found');
   err.status = 404;
   next(err);
-});
+
+/**/});
 
 // error handler
 app.use(function(err, req, res, next) {
@@ -87,7 +88,12 @@ app.post('/login',(req,res) => {
   })
   // db.close();
 })
+})
 app.get('/login', (req, res) => {
   res.sendFile(__dirname + "/public/authentication/login.html");
+})
+app.listen(3000, function() {
+  console.log('listening on 3000')
+
 })
 module.exports = app;
